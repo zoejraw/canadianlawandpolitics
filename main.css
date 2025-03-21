@@ -1,0 +1,42 @@
+.navbar{
+    width: 25%; /*width of the navbar on page*/
+    max-width:fit-content;
+    height: 100%;
+    background-color: #ff3131;
+    position: fixed; /*stays when user scrolls*/
+    top: 0px; /*align to the top of screen*/
+    left: 0px; /*align to the left of the screen*/
+    padding: 0px;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.2); /* Shadow on the right side */
+}
+
+.navbar ul{
+    list-style-type: none; /*removes bullet points from list*/
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar li{
+    width: 100%; /* width of the link in the nav bar*/
+}
+
+.navbar ul li a{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 8px 16px; /* 8=top/bottom, 16=left/right */
+    text-decoration: none; /*removes line from underneath link*/
+    font-size: 18px;
+    width: 100%; /*link is the full length of the object*/
+    box-sizing: border-box;
+}
+
+.navbar ul li a.active{
+    background-color: #d22b2b;
+    color: #ffffff;
+}
+
+.navbar ul li a:hover{
+    background-color: #D2042D;
+    color: #ffffff;
+}
