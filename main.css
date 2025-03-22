@@ -1,23 +1,49 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.website-header{
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    box-sizing: border-box;
+}
+
 .navbar{
-    width: 25%; /*width of the navbar on page*/
-    max-width:fit-content;
-    height: 100%;
+    width: 100%; /*width of the navbar on page*/
+    float: left;
     background-color: #ff3131;
     position: fixed; /*stays when user scrolls*/
-    top: 0px; /*align to the top of screen*/
+    top: 60px; /*align to the top of screen*/
     left: 0px; /*align to the left of the screen*/
     padding: 0px;
-    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.2); /* Shadow on the right side */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px -4px 8px rgba(0, 0, 0, 0.2); /* shadow on both top and bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 .navbar ul{
     list-style-type: none; /*removes bullet points from list*/
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:c center;
 }
 
-.navbar li{
-    width: 100%; /* width of the link in the nav bar*/
+.navbar ul li{
+    padding: 5px;
 }
 
 .navbar ul li a{
@@ -27,8 +53,11 @@
     padding: 8px 16px; /* 8=top/bottom, 16=left/right */
     text-decoration: none; /*removes line from underneath link*/
     font-size: 18px;
-    width: 100%; /*link is the full length of the object*/
     box-sizing: border-box;
+}
+
+.navbar ul li:hover {
+    background-color: #D2042D;
 }
 
 .navbar ul li a.active{
@@ -37,6 +66,34 @@
 }
 
 .navbar ul li a:hover{
-    background-color: #D2042D;
+    background-color: transparent;
     color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* stack the items vertically on small screens */
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        width: 100%; /* make each item take full width on small screens */
+    }
+
+    .navbar ul li a {
+        padding: 10px 20px; /* more space for touch targets on small screens */
+        font-size: 16px; /* slightly smaller font size on mobile */
+    }
+
+    .navbar {
+        padding: 10px 0; /* adjust navbar padding for mobile */
+    }
+}
+
+/* Media Query for small mobile screens */
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 14px; /* reduce font size even further on very small screens */
+    }
 }
