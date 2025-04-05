@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law and Rights</title>
+    <link rel="stylesheet" href="main.css">
+    <style type="html/css">
+
+    </style>
+</head>
+<body>
+    <div class="website-header"> Canadian Law and Poltics</div>
+    <div id="navbar-container"></div>
+ 
+    <script>
+     //grabs the html for the navbar and puts it on every page
+ 
+     fetch('navbar.html')
+         .then(response => response.text())
+         .then(data => {
+             document.getElementById('navbar-container').innerHTML = data;
+         });
+    </script>
+ 
+</body>
+</html>
