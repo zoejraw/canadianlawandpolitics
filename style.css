@@ -1,7 +1,6 @@
 h1{
     font-family: Arial, Helvetica, sans-serif;
     color:#8B0000;
-
 }
 
 h2{
@@ -10,10 +9,12 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
     color: #ffff;
 }
+
 h3{
     font-family: Arial, Helvetica, sans-serif;
     color: #282828;
 }
+
 h4{
     font-family: Arial, Helvetica, sans-serif;
     color: #686868;
@@ -25,4 +26,16 @@ p{
 
 th{
     color: #8B0000;
+}
+
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DE3163;
+}
+a:visited{
+    color:#FAA0A0;
+}
+
+a:hover{
+    color:#800020
 }
