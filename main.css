@@ -65,7 +65,7 @@ html, body {
     background-color: #D2042D;
 }
 
-.navbar ul li a.active{
+.navbar ul li a:active{
     background-color: #d22b2b;
     color: #ffffff;
 }
