@@ -6,7 +6,7 @@ html, body {
 }
 
 .website-header{
-    background-color: lightgray;
+    background-color: #800020;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -23,7 +23,7 @@ html, body {
 
 #navbar-container{
     width: 100%; /*width of the navbar on page*/
-    background-color: #ff3131;
+    background-color: #DC143C;
     float:left;
     position: sticky; 
     top: 60px; /*align to the top of screen*/
